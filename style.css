@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.menu-button{
+    margin-top: 20px;
+    display: block;
+}
+
+button{
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    background: rgb(182, 173, 173);
+    cursor: pointer;
+}
+nav button:hover{
+    font-weight: bold;
+}
+
+@media (min-width: 654px)
+{
+    .menu-button{
+        visibility: hidden;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        visibility: visible;
+    }
+}
