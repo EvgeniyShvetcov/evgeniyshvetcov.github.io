@@ -1,9 +1,16 @@
 let main = new Vue({
     el: '#menu',
+    data:{
+    },
     methods:{
-        showMenu: function(){
-           let menuItem = document.getElementById('menu-container');
-           menuItem.style.visibility = menuItem.style.visibility == 'hidden' ? 'visible' : 'hidden';
+        teacherRequest : function(){
+            alert("Запрос по данным учителя");
+        },
+        scheduleRequest : function(){
+            alert("Запрос расписания");
+        },
+        newsRequest : function(){
+            alert("Запрос новостей");
         }
     }
 })

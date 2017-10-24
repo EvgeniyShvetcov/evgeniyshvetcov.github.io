@@ -1,19 +1,22 @@
-nav{
+*{
+    margin: 0px;
+}
+.menu-container{
     display: flex;
     flex-direction: column;
-    visibility: hidden;
-}
-.menu-button{
-    margin-top: 20px;
-    display: block;
+    margin: 5px 0px 5px 0px;
 }
 
-button{
-    width: 200px;
+.menu-item{
+    background: rgba(255, 0, 0, 0.700);
     font-size: 20px;
     color: white;
-    background: rgb(182, 173, 173);
     cursor: pointer;
+    border: 0px;
+}
+.image{
+    margin-top: 8px;
+    margin-left: 8px;
 }
 nav button:hover{
     font-weight: bold;
@@ -21,15 +24,14 @@ nav button:hover{
 
 @media (min-width: 654px)
 {
-    .menu-button{
-        visibility: hidden;
-    }
-
-    nav{
+    .menu-container{
+        padding: 0px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-top: 20px;
-        visibility: visible;
+    }
+    .menu-item{
+        width: 30%;
     }
 }
